@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .box {
+      width: 400px;
+      height: 400px;
+      border: 5px solid black;
+      border-radius: 50%;
+      /* background: #ffa; */
+      font-size: 3rem;
+      line-height: 400px;
+      text-align: center;
+    }
+
+    .box-shadow {
+      box-shadow: 0 0 10px blue;
+    }
+
+    .drop-shadow {
+      filter: drop-shadow(0 0 5px blue);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- html5 的標籤具有語義化 -->
+  <section>
+    <div class="box drop-shadow" style="margin-right: 50px;">
+      <span class="drop-shadow">drop-shadow</span>
+    </div>
+    <div class="box box-shadow">
+      <span class="box-shadow">box-shadow</span>
+    </div>
+  </section>
+</body>
+
+</html>
